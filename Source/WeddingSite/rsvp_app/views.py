@@ -21,3 +21,12 @@ def index(request):
         'rsvp_app/index.html',
         context
     )
+
+def rsvp(request):
+    assert isinstance(request, HttpRequest)
+    context = RequestContext(request)
+    return render(
+        request,
+        'rsvp_app/rsvp.html',
+        context
+                  )
