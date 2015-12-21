@@ -1,0 +1,24 @@
+
+.starter-template {
+    padding: 90px 15px;
+    text-align: center;
+}
+
+.navbar {
+    opacity: .65;
+}
+
+input {
+    max-width: 300px;
+    min-width: 40px;
+}
+
+textarea {
+    max-width: 200px;
+    min-width: 40px;
+    max-height: 100px;
+}
+
+.error {
+    color: red;
+}

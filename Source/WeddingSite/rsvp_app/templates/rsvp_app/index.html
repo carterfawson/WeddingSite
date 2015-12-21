@@ -58,22 +58,22 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="{% static 'photos/therock.jpeg' %}" alt="Generic placeholder image" width="140" height="140">
+                <h2>Tell us you're coming!</h2>
+                <p>There is a code on your invitation. You can click here and enter the code to RSVP for the wedding celebration. We can't wait to celebrate with you!</p>
+                <p><a class="btn btn-default" href="{% url 'rsvp' %}" role="button">RSVP</a></p>
                 </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="{% static 'photos/shia1.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+                <h2>Wedding Information</h2>
+                <p>Details for the wedding... Or DEEZ NUTZ? Click the link to find out!</p>
+                <p><a class="btn btn-default" href="#" role="button">Details</a></p>
                 </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
-            <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <img class="img-circle" src="{% static 'photos/slick-rick.jpg' %}" alt="Generic placeholder image" width="140" height="140">
+                <h2>Registry</h2>
+                <p>This ain't yo mama's sunday afternoon registry. This shit 'bout to get real!</p>
+                <p><a class="btn btn-default" href="#" role="button">Registry</a></p>
                 </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
     
@@ -84,11 +84,11 @@
     
     <div class="row featurette">
         <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">The Bride: Sarah Thompson <span class="text-muted">The most beautiful person.</span></h2>
+            <p class="lead">Nobody has a brighter smile, a more adventurous spirit, or a bigger heart than Sarah. She is a texan, she loves pugs, she can cook a mean batch of spaghetti squash, and she is my fiance! I'm the luckiest</p><pclass="lead">-Carter</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive center-block" src="{% static 'photos/Sarah1.jpg' %}" alt="Generic placeholder image">
                 </div>
     </div>
     
@@ -100,7 +100,7 @@
             <p class="lead">Uh Huh Hunny!</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive center-block" src="{% static 'photos/carter1.jpg' %}" alt="Generic placeholder image">
                 </div>
     </div>
     
@@ -109,10 +109,10 @@
     <div class="row featurette">
         <div class="col-md-7">
             <h2 class="featurette-heading">So IN LOVE! <span class="text-muted">ooh baby</span></h2>
-            <p class="lead">temporary placeholding text</p>
+            <p class="lead">Don't mess with this!</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-responsive center-block" src="{% static 'photos/carterandsarah1.jpg' %}" alt="Generic placeholder image">
                 </div>
     </div>
     

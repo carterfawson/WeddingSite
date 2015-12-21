@@ -39,7 +39,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-    height: 700px;
+    height: 500px;
     margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -49,7 +49,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    min-height: 700px;
+    min-height: 500px;
     background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -58,7 +58,164 @@ body {
     left: 0;
     min-width: none;
     min-height: none;
- 
+    
+}
+
+
+@media only screen and (max-width: 959px) {
+    /* Carousel base class */
+    .carousel {
+        height: 450px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 450px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+     
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Carousel base class */
+    .carousel {
+        height: 400px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 400px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+        
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /* Carousel base class */
+    .carousel {
+        height: 350px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 350px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+        
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    /* Carousel base class */
+    .carousel {
+        height: 300px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 300px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+        
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* Carousel base class */
+    .carousel {
+        height: 250px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 250px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+        
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    /* Carousel base class */
+    .carousel {
+        height: 210px;
+        margin-bottom: 60px;
+    }
+    /* Since positioning the image, we need to help out the caption */
+    .carousel-caption {
+        z-index: 10;
+    }
+    
+    /* Declare heights because of positioning of img element */
+    .carousel .item {
+        min-height: 210px;
+        background-color: #777;
+    }
+    .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-width: none;
+        min-height: none;
+        
+    }
 }
 
 
