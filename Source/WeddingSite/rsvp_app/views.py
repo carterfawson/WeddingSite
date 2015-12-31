@@ -74,3 +74,15 @@ def rsvp(request):
         'rsvp_app/rsvp.html',
         context
                   )
+
+
+def details(request):
+    assert isinstance(request, HttpRequest)
+    context = RequestContext(request, {
+                             'navbar':'details',
+                             })
+    return render(
+               request,
+               'rsvp_app/details.html',
+               context
+               )

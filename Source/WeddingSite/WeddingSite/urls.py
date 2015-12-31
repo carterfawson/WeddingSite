@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^$', 'rsvp_app.views.index', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^rsvp$', 'rsvp_app.views.rsvp', name='rsvp'),
+    url(r'^details$', 'rsvp_app.views.details', name='details'),
 ]

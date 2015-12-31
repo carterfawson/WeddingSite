@@ -29,6 +29,7 @@ body {
     padding-right: 15px;
     padding-left: 15px;
 }
+
 .navbar-wrapper .navbar .container {
     width: auto;
 }
@@ -254,7 +255,7 @@ body {
 /* RESPONSIVE CSS
  -------------------------------------------------- */
 
-@media (min-width: 768px) {
+@media (min-width: 10000px) {
     /* Navbar positioning foo */
     .navbar-wrapper {
         margin-top: 20px;

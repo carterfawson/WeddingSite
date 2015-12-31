@@ -6,6 +6,7 @@
 
 .navbar {
     opacity: .65;
+    width: 100%;
 }
 
 input {
@@ -21,4 +22,58 @@ textarea {
 
 .error {
     color: red;
+}
+
+.navbar-wrapper {
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+}
+
+#map {
+    min-width: 400px;
+    max-width: 35%;
+    max-height: 400px;
+    height: 100%;
+    float: left;
+}
+
+html, body, .details {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.details {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.details-general {
+    text-align: left;
+    float: right;
+    padding-left: 50px;
+    overflow: hidden;
+    min-width: 25%;
+}
+
+
+.travel-button {
+    background-color: #a7d6b0;
+
+}
+
+.travel {
+    max-width: 15%;
+    max-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.jumbotron {
+    max-height: 35%;
+    text-align: center;
 }
