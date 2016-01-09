@@ -90,6 +90,7 @@ html, body, .details {
 .jumbotron {
     max-height: 35%;
     text-align: center;
+    background-color: white;
 }
 
 .registry {
