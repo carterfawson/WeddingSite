@@ -31,7 +31,7 @@ def rsvp(request):
         if 'code' in request.POST:
             codeform = RSVP_CodeForm(request.POST)
             if codeform.is_valid():
-                if codeform.cleaned_data['code'] == '1234':
+                if codeform.cleaned_data['code'] == 'celebrationstation':
                     flag = False
                 else:
                     wrong = True

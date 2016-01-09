@@ -1,8 +1,9 @@
 var map;
 var infowindow;
 
+
 function initMap() {
-    var Logan = {lat: 41.744479, lng: -111.794636};
+    var Logan = {lat: 41.926576, lng: -111.756374};
     
     map = new google.maps.Map(document.getElementById('map'), {
                               center: Logan,
@@ -14,8 +15,7 @@ function initMap() {
     var service = new google.maps.places.PlacesService(map);
     service.nearbySearch({
                          location: Logan,
-                         radius: 100,
-                         types: ['golf']
+                         radius: 100
                          }, callback);
 }
 
@@ -43,7 +43,7 @@ function createMarker(place) {
 var main = function() {
     $(".travel-details").toggle();
     $(".travel-button").click(function() {
-                            $(".travel-details").toggle();
+                            $(".travel-details").slideToggle();
                             });
 };
 
