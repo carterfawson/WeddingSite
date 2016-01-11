@@ -1,3 +1,14 @@
+p {
+    font-family: 'Oxygen', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
 
 .starter-template {
     padding: 90px 15px;
@@ -5,7 +16,7 @@
 }
 
 .navbar {
-    opacity: .65;
+    opacity: 1;
     width: 100%;
 }
 
@@ -57,7 +68,7 @@ html, body, .details {
 .details {
     padding-left: 10%;
     padding-right: 10%;
-    max-height: 600px;
+    max-height: 550px;
     min-height: 550px;
 }
 
@@ -71,8 +82,18 @@ html, body, .details {
 
 
 .travel-button {
-    background-color: #a7d6b0;
+    background-color: #505050;
 
+}
+
+.photo-button {
+    background-color: #505050;
+}
+
+.travel-button-container {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
 }
 
 .travel-details {
@@ -93,6 +114,14 @@ html, body, .details {
     background-color: white;
 }
 
+.j-details {
+    margin-bottom: 0px;
+}
+
+.jumbotron h1 {
+    font-size: 40px;
+}
+
 .registry {
     width: 100%;
     text-align: center;
@@ -102,6 +131,7 @@ html, body, .details {
 
 .registry h2 {
     font-size: 40px;
+    padding-bottom: 3%;
 }
 
 .registr-1 {
@@ -109,8 +139,8 @@ html, body, .details {
     padding-left: 25%;
 }
 
-.registr-1 a {
-    padding-bottom: 2%;
+.registr-1 a img {
+    padding-bottom: 5%;
 }
 
 .registr-2 {
@@ -146,8 +176,75 @@ html, body, .details {
 .travel-map {
     max-width: 100%;
     height: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.photo-library {
+    text-align: center;
+}
+
+.library-image {
+    display: inline-block;
+    width: 100%;
+}
+
+.library-image img {
+    max-width: 50%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+hr {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.about-form {
+    width: 100%;
+    text-align: center;
+}
+
+.about-form form p input {
+    min-width: 300px;
+}
+
+.about-form form p textarea {
+    min-width: 50%;
+    min-height: 20%;
+}
+
+.about-feature {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.photo-img {
+    width: 100%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+
+.photo-img a img {
+    max-width: 20%;
+    min-width: 150px;
+    height: auto;
+    margin-top: 0px;
+}
+
+.photo-img a img:hover {
+    opacity: .6;
+}
+
+.photo-library {
     padding-bottom: 10%;
 }
+
+.featurette-image2 {
+    padding-bottom: 15%;
+}
+
 
 @media only screen and (max-width: 1700px) {
     
@@ -168,17 +265,14 @@ html, body, .details {
         float: left;
     }
     
-    .moving-details {
-        font-size: 40px;
-    }
     
     .moving-paragraph {
-        font-size: 25px;
+        font-size: 18px;
     }
 
 }
 
-@media only screen and (max-width: 1164px) {
+@media only screen and (max-width: 1066px) {
     
     #map {
         float: none;
@@ -187,10 +281,14 @@ html, body, .details {
 
     }
     
+    .breaker {
+        min-width: 100%;
+    }
+    
     .details {
         text-align: center;
-        max-height: 900px;
-        min-height: 900px;
+        max-height: 800px;
+        min-height: 800px;
         padding-left: 4%;
         padding-right: 4%;
     }
@@ -207,6 +305,14 @@ html, body, .details {
 }
 
 @media only screen and (max-width: 767px) {
+    .about-form form p input {
+        min-width: 50%;
+    }
+    
+    .travel-map {
+        padding-bottom: 10%;
+    }
+    
     #map {
         float: none;
         display: inline-block;
@@ -222,8 +328,8 @@ html, body, .details {
     
     .details {
         text-align: center;
-        max-height: 700px;
-        min-height: 700px;
+        max-height: 550px;
+        min-height: 550px;
         padding-left: 4%;
         padding-right: 4%;
     }

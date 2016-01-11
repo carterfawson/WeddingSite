@@ -2,24 +2,24 @@
 
 {% block content %}
 {% load staticfiles %}
-<div class="jumbotron">
+<div class="jumbotron j-details">
     <h1>Wedding Details</h1>
 </div>
-
 <div class="details">
     <div id="map"></div>
+    <div class="breaker"></div>
     <div class="details-general">
-        <h4 class="moving-details">When:</h4>
-        <p class="moving-paragraph">Saturday May 28th, 2016<br>4:30 pm</p>
-        
-
-        <h4 class="moving-details">Where:</h4>
+        <h2>When:</h2>
+        <p class="moving-paragraph">Saturday May 28th, 2016<br>4:00 pm</p>
+        <h2>Where:</h2>
         <p class="moving-paragraph"><b>Cherry Peak Resort</b><br><a href="https://www.google.com/maps/place/Cherry+Peak+Resort/@41.9263482,-111.7585945,17z/data=!3m1!4b1!4m2!3m1!1s0x875466b5c305bfb3:0x58abc9c9754403cc" target="_blank">3200 E 11000 N<br>Richmond, UT 84333</a></p>
-        <hr><button type="button" class="travel-button btn btn-lg btn-primary">Travel Details</button>
     </div>
 </div>
+<hr>
+<div class="travel-button-container">
+    <p><button type="button" class="travel-button btn btn-lg btn-primary">Travel Details</button></p>
+</div>
 <div class="travel-details">
-    <hr>
     
     <div class="row marketing">
         <div class="col-lg-6">
@@ -28,11 +28,11 @@
             <p>For all people thinking about flying to attend the wedding, the closest airport to the festivities is the <strong>Salt Lake City International Airport (SLC).</strong></p>
             
             <h4>Accommodations</h4>
-            <p><a class="btn btn-default travel-button" href="https://www.google.com/maps/search/hotels/@41.7322424,-111.8378446,12z/data=!3m1!4b1" role="button">Hotels</a> OR <a class="btn btn-default travel-button" href="https://www.airbnb.com/s/Logan--UT--United-States?guests=&checkin=&checkout=&ss_id=1101rqba&source=bb" role="button">Airbnb</a></p>
+            <p><a class="btn btn-default" href="https://www.google.com/maps/search/hotels/@41.7322424,-111.8378446,12z/data=!3m1!4b1" role="button">Hotels</a> OR <a class="btn btn-default" href="https://www.airbnb.com/s/Logan--UT--United-States?guests=&checkin=&checkout=&ss_id=1101rqba&source=bb" role="button">Airbnb</a></p>
             
             
             <h4>Transportation</h4>
-            <p>SLC Airport is located about 80 miles south of (a 1.5 hour drive to) Logan, Utah. For those wanting to rent a car, you can do so before you exit the airport. Another option to get to Logan would be to ride the {shuttle} and contact us for how to get to the wedding on saturday.</p>
+            <p>SLC Airport is located about 80 miles south of (a 1.5 hour drive to) Logan, Utah. For those wanting to rent a car, you can do so before you exit the airport. Another option to get to Logan would be to ride the <a href="http://www.saltlakeexpress.com/">Salt Lake Express</a> and contact us for how to get to the wedding on saturday.</p>
             
         </div>
         
@@ -46,7 +46,7 @@
 <div class="registry">
     <h2>Registry</h2>
         <div class="registr-1">
-            <a href="https://www-secure.target.com/gift-registry/giftgiver?registryId=XkjVzTdAkZJWc9gHtIoyyA&lnk=copiedLink"><img src="{% static 'photos/target.jpg' %}" alt="Generic placeholder image" width="190" height="140"></a>
+            <a href="https://www-secure.target.com/gift-registry/giftgiver?registryId=XkjVzTdAkZJWc9gHtIoyyA&lnk=copiedLink"><img src="{% static 'photos/target.jpg' %}" alt="Generic placeholder image" width="190" height="150"></a>
                 <p><a class="travel-button btn btn-lg btn-primary" href="https://www-secure.target.com/gift-registry/giftgiver?registryId=XkjVzTdAkZJWc9gHtIoyyA&lnk=copiedLink" role="button">Target</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="registr-2">
