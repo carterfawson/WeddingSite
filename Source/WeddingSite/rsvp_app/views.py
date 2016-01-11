@@ -86,3 +86,23 @@ def details(request):
                'rsvp_app/details.html',
                context
                )
+
+def about(request):
+    assert isinstance(request, HttpRequest)
+    if request.method == 'POST':
+        form = Advice_Form(request.POST)
+        if form.is_valid():
+            newadv = advice(name=form.cleaned_data['name'], advice=form.cleaned_data['advice'])
+            newadv.save()
+
+    form = Advice_Form()
+
+    context = RequestContext(request, {
+                             'navbar':'about',
+                             'form':form,
+                             })
+    return render(
+               request,
+               'rsvp_app/about.html',
+               context
+               )

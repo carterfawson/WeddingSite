@@ -113,6 +113,37 @@ html, body, .details {
     padding-right: 25%;
 }
 
+.about-details {
+    padding-top: 10%;
+    min-height: 750px;
+}
+
+.couple {
+    float: left;
+    padding-left: 5%;
+    max-width: 50%;
+    height: auto;
+}
+
+.couple-details {
+    float: right;
+    padding-right: 5%;
+    max-width: 40%;
+    height: auto;
+}
+
+#travel-map {
+    text-align:center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.travel-map {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 10%;
+}
+
 @media only screen and (max-width: 1700px) {
     
     #map {
@@ -213,5 +244,47 @@ html, body, .details {
         padding-right: 0px;
         width: 80%;
         margin: auto;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .couplecenter {
+        text-align: center;
+    }
+    
+    .couple {
+        width: 100%;
+        display: inline-block;
+        float: none;
+        padding-left: 0px;
+        max-width: 80%;
+    }
+    
+    .couple img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .about-details {
+        text-align: center;
+        min-height: 138%;
+        padding-top: 15%;
+    }
+    
+    .couple-details {
+        width: 100%;
+        padding-top: 20px;
+        display: inline-block;
+        float: none;
+        padding-right: 0px;
+        max-width: 70%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .about-details {
+        min-height: 780px;
     }
 }

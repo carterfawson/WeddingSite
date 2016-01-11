@@ -35,3 +35,7 @@ class RSVP_Form(forms.Form):
     numguests = forms.IntegerField(label= False, widget=forms.TextInput(attrs={'placeholder': 'Number \'O Guests'}))
     guestnames = forms.CharField(required = False, label = False, widget=forms.Textarea(attrs={'placeholder': 'Guest Names'}))
     comments = forms.CharField(required = False, label= False, widget=forms.Textarea(attrs={'placeholder': 'Questions or Comments'}))
+
+class Advice_Form(forms.Form):
+    name = forms.CharField(label = False, max_length=45, widget=forms.TextInput(attrs={'placeholder': 'Name'}))
+    advice = forms.CharField(required = True, label= False, widget=forms.Textarea(attrs={'placeholder': 'Advice For the Newlyweds OR Travel Suggestions'}))

@@ -15,4 +15,9 @@ class contact(models.Model):
     attendees = models.TextField(null=True)
     guestnum = models.IntegerField(null=True)
 
+class advice(models.Model):
+    adviceid = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=45, null=False)
+    advice = models.TextField(null=False)
+
 

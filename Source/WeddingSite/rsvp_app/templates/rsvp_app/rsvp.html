@@ -37,6 +37,7 @@
     
     <div class="starter-template">
         <h1>Enter RSVP Code</h1>
+        <p>Check the back of your invitation to find the RSVP code and enter it below.</p>
         <form action="{% url 'rsvp' %}" method="post">
             {% csrf_token %}
             {{ codeform.as_p }}

@@ -1,0 +1,75 @@
+{% extends "rsvp_app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="about-details">
+    <div class="couplecenter">
+    <div class="couple">
+        <img src="{% static 'photos/couple.jpg' %}">
+    </div>
+    </div>
+    <div class="couple-details">
+        <h2>About Us</h2>
+        <p>Basically what I am going to try and do here is just write a bunch of text so that I can simulate what it is going to look like with our long about us description written out. There will be stuff about how we met, about where we are from, about what our future plans are, about how we want to travel and we love trying new and adventurous things. I hope there will be something in here about how Sarah is afraid of taxidermy, maybe something about when that little black boy scared her to death at that Nordstrom in The Woodlands. There are so many things that would be awesome to put into here.</p>
+    </div>
+</div>
+<hr>
+
+<div id="links" class="photo-library">
+    <a href="{% static 'photos/Carter&SarahEngagementEdit-131.jpg' %}" title="Banana" data-gallery>
+        <button type="button" class="travel-button btn btn-lg btn-primary">Photo Gallery</button>
+    </a>
+    <a href="{% static 'photos/Carter&SarahEngagementEdit-131.jpg' %}" title="Apple" data-gallery>
+    </a>
+    <a href="{% static 'photos/Carter&SarahEngagementEdit-131.jpg' %}" title="Orange" data-gallery>
+    </a>
+</div>
+
+<hr>
+
+<div id="travel-map">
+    <img class="travel-map" src="{% static 'photos/travelmap.jpg' %}">
+</div>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <!-- The container for the modal slides -->
+    <div class="slides"></div>
+    <!-- Controls for the borderless lightbox -->
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+    <!-- The modal dialog, which will be used to wrap the lightbox content -->
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body next"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button type="button" class="btn btn-primary next">
+                        Next
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form action="{% url 'about' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit" class="btn btn-success" name="about">Submit</button></p>
+</form>
+
+{% endblock %}
