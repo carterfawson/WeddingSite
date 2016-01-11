@@ -97,6 +97,7 @@ html, body, .details {
     width: 100%;
     text-align: center;
     min-height: 400px;
+    padding-bottom: 3%;
 }
 
 .registry h2 {
@@ -106,6 +107,10 @@ html, body, .details {
 .registr-1 {
     float: left;
     padding-left: 25%;
+}
+
+.registr-1 a {
+    padding-bottom: 2%;
 }
 
 .registr-2 {
