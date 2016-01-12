@@ -167,6 +167,10 @@ html, body, .details {
     height: auto;
 }
 
+.couple-details p {
+    
+}
+
 #travel-map {
     text-align:center;
     padding-left: 10%;
