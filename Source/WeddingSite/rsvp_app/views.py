@@ -24,6 +24,7 @@ def index(request):
 
 def rsvp(request):
     assert isinstance(request, HttpRequest)
+    finished = False
     flag = True
     wrong = False
     error = False
@@ -40,6 +41,7 @@ def rsvp(request):
             rsvpform = RSVP_Form(request.POST)
             if rsvpform.is_valid():
                 flag = True
+                finished = True
                 addressfull = rsvpform.cleaned_data['address'] + " " + rsvpform.cleaned_data['address2']
                 newcont = contact(name=rsvpform.cleaned_data['name'], email=rsvpform.cleaned_data['email'], phone=rsvpform.cleaned_data['phone'], address=addressfull, city=rsvpform.cleaned_data['city'], state=rsvpform.cleaned_data['state'], zip=rsvpform.cleaned_data['zip'], guestnum=rsvpform.cleaned_data['numguests'])
                 
@@ -64,6 +66,7 @@ def rsvp(request):
     context = RequestContext(request, {
                              'navbar':'rsvp',
                              'flag':flag,
+                             'finished':finished,
                              'codeform':codeform,
                              'rsvpform':rsvpform,
                              'wrong':wrong,
