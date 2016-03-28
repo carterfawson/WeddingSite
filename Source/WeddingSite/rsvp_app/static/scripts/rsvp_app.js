@@ -40,11 +40,11 @@ function createMarker(place) {
                                   });
 }
 
-var main = function() {
-    $(".travel-details").toggle();
-    $(".travel-button").click(function() {
-                            $(".travel-details").slideToggle();
-                            });
-};
+//var main = function() {
+//    $(".travel-details").toggle();
+//    $(".travel-button").click(function() {
+//                            $(".travel-details").slideToggle();
+//                            });
+//};
 
 $(document).ready(main);

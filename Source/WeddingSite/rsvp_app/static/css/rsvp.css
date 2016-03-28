@@ -108,6 +108,11 @@ html, body, .details {
     font-size: 40px;
 }
 
+.travel-details h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
 .jumbotron {
     max-height: 35%;
     text-align: center;
